@@ -1,16 +1,13 @@
 ﻿{
-    "builds":  [
-                   {
-                       "chipFamily":  "ESP32-S3",
-                       "parts":  [
-                                     {
-                                         "offset":  0,
-                                         "path":  "https://github.com/Makestreme/macroduck/releases/latest/download/macroduck_xiao_esp32s3.merged.bin"
-                                     }
-                                 ]
-                   }
-               ],
-    "name":  "Macro Duck Firmware - XIAO ESP32-S3",
-    "version":  "1.0.0",
-    "new_install_prompt_erase":  true
+  "name": "Macro Duck Firmware - XIAO ESP32-S3",
+  "version": "1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "macroduck_xiao_esp32s3.merged.bin", "offset": 0 }
+      ]
+    }
+  ]
 }

@@ -1,16 +1,13 @@
 ﻿{
-    "builds":  [
-                   {
-                       "chipFamily":  "ESP32-S3",
-                       "parts":  [
-                                     {
-                                         "offset":  0,
-                                         "path":  "https://github.com/Makestreme/macroduck/releases/latest/download/macroduck_esp32s3_supermini.merged.bin"
-                                     }
-                                 ]
-                   }
-               ],
-    "name":  "Macro Duck Firmware - ESP32-S3 SuperMini",
-    "version":  "1.0.0",
-    "new_install_prompt_erase":  true
+  "name": "Macro Duck Firmware - ESP32-S3 SuperMini",
+  "version": "1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "macroduck_esp32s3_supermini.merged.bin", "offset": 0 }
+      ]
+    }
+  ]
 }
