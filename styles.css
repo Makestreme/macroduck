@@ -74,6 +74,7 @@ main { max-width: 920px; margin: 26px auto; padding: 0 18px 56px; }
 .btn.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); }
 .btn.primary:hover { background: #0b7d59; }
 .btn.ghost { background: transparent; font-weight: 500; }
+.btn.primary + .btn { margin-left: 10px; }
 
 esp-web-install-button {
   --esp-web-install-button-color: var(--accent);

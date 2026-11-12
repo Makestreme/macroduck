@@ -1,0 +1,37 @@
+{
+  "settings": {
+    "sound_enabled": true,
+    "test_mode": false,
+    "trigger_key": "right ctrl",
+    "double_tap_window_ms": 250,
+    "long_press_threshold_ms": 550,
+    "esp_port": "",
+    "start_with_windows": false
+  },
+  "profiles": {
+    "winword.exe": {
+      "enabled_gestures": {
+        "single": true,
+        "double": true,
+        "long": true
+      },
+      "actions": {
+        "single": "ctrl+backspace",
+        "double": "",
+        "long": "ctrl+a, backspace"
+      }
+    }
+  },
+  "default_profile": {
+    "enabled_gestures": {
+      "single": true,
+      "double": true,
+      "long": true
+    },
+    "actions": {
+      "single": "",
+      "double": "",
+      "long": ""
+    }
+  }
+}
