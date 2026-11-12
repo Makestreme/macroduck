@@ -5,7 +5,7 @@
                        "parts":  [
                                      {
                                          "offset":  0,
-                                         "path":  "https://github.com/YOUR_USER/YOUR_REPO/releases/latest/download/macroduck_xiao_esp32s3.merged.bin"
+                                         "path":  "https://github.com/Makestreme/macroduck/releases/latest/download/macroduck_xiao_esp32s3.merged.bin"
                                      }
                                  ]
                    }

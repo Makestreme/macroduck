@@ -1,125 +1,195 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Macro Duck</title>
-  <meta name="description" content="Macro Duck: context-aware universal macro app. Flash firmware to your board from the browser, or download the Windows app." />
-  <link rel="icon" type="image/png" href="icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
-</head>
-<body>
-  <header class="topbar">
-    <div class="brand">
-      <img src="icon.png" alt="Macro Duck" class="logo" />
-      <div>
-        <h1>macroduck</h1>
-        <p class="tag">context-aware universal macro app</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Macro Duck</title>
+    <meta
+      name="description"
+      content="Macro Duck: context-aware universal macro app. Flash firmware to your board from the browser, or download the Windows app."
+    />
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
+    ></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <img src="icon.png" alt="Macro Duck" class="logo" />
+        <div>
+          <h1>macroduck</h1>
+          <p class="tag">context-aware universal macro app</p>
+        </div>
       </div>
-    </div>
-    <a class="btn ghost" href="https://github.com/" target="_blank" rel="noopener">github</a>
-  </header>
+      <a
+        class="btn ghost"
+        href="https://github.com/Makestreme/macroduck"
+        target="_blank"
+        rel="noopener"
+        >github</a
+      >
+    </header>
 
-  <main>
-    <section class="card">
-      <h2>setup guide</h2>
-      <p class="muted">Full walkthrough: hardware wiring, flashing, and using the app.</p>
-      <div class="video-wrap">
-        <iframe
-          src="https://www.youtube.com/embed/VIDEO_ID"
-          title="Macro Duck setup guide"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          loading="lazy"></iframe>
-      </div>
-    </section>
+    <main>
+      <section class="card">
+        <h2>setup guide</h2>
+        <p class="muted">
+          Full walkthrough: hardware wiring, flashing, and using the app.
+        </p>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            title="Macro Duck setup guide"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
 
-    <section class="card">
-      <h2>flash firmware</h2>
-      <p class="muted">
-        One-click flashing works in Chrome or Edge over USB. Plug your board in, click Install on its card, then pick your board's port when the browser asks.
-      </p>
+      <section class="card">
+        <h2>flash firmware</h2>
+        <p class="muted">
+          One-click flashing works in Chrome or Edge over USB. Plug your board
+          in, click Install on its card, then pick your board's port when the
+          browser asks.
+        </p>
 
-      <div class="board-grid">
-        <article class="board">
-          <h3>esp32-c3 supermini</h3>
-          <p class="meta">BUTTON_PIN = 4</p>
-          <esp-web-install-button manifest="firmware/esp32c3_supermini.json"></esp-web-install-button>
-        </article>
+        <div class="board-grid">
+          <article class="board">
+            <h3>esp32-c3 supermini</h3>
+            <p class="meta">BUTTON_PIN = 4</p>
+            <esp-web-install-button
+              manifest="firmware/esp32c3_supermini.json"
+            ></esp-web-install-button>
+          </article>
 
-        <article class="board">
-          <h3>xiao esp32-c3</h3>
-          <p class="meta">BUTTON_PIN = 4</p>
-          <esp-web-install-button manifest="firmware/xiao_esp32c3.json"></esp-web-install-button>
-        </article>
+          <article class="board">
+            <h3>xiao esp32-c3</h3>
+            <p class="meta">BUTTON_PIN = 4</p>
+            <esp-web-install-button
+              manifest="firmware/xiao_esp32c3.json"
+            ></esp-web-install-button>
+          </article>
 
-        <article class="board">
-          <h3>esp32-s3 supermini</h3>
-          <p class="meta">BUTTON_PIN = 3</p>
-          <esp-web-install-button manifest="firmware/esp32s3_supermini.json"></esp-web-install-button>
-        </article>
+          <article class="board">
+            <h3>esp32-s3 supermini</h3>
+            <p class="meta">BUTTON_PIN = 3</p>
+            <esp-web-install-button
+              manifest="firmware/esp32s3_supermini.json"
+            ></esp-web-install-button>
+          </article>
 
-        <article class="board">
-          <h3>xiao esp32-s3</h3>
-          <p class="meta">BUTTON_PIN = 3</p>
-          <esp-web-install-button manifest="firmware/xiao_esp32s3.json"></esp-web-install-button>
-        </article>
+          <article class="board">
+            <h3>xiao esp32-s3</h3>
+            <p class="meta">BUTTON_PIN = 3</p>
+            <esp-web-install-button
+              manifest="firmware/xiao_esp32s3.json"
+            ></esp-web-install-button>
+          </article>
 
-        <article class="board manual">
-          <h3>any other board</h3>
-          <p class="meta">flash the arduino sketch manually</p>
-          <ol class="steps">
-            <li>install arduino ide and your board package</li>
-            <li>open the sketch, set BUTTON_PIN to your pin</li>
-            <li>select board + com port, upload</li>
-          </ol>
-          <a class="btn" href="firmware/macroduck_firmware.ino" download>download .ino</a>
-        </article>
-      </div>
-    </section>
+          <article class="board manual">
+            <h3>any other board</h3>
+            <p class="meta">flash the arduino sketch manually</p>
+            <ol class="steps">
+              <li>install arduino ide and your board package</li>
+              <li>open the sketch, set BUTTON_PIN to your pin</li>
+              <li>select board + com port, upload</li>
+            </ol>
+            <a class="btn" href="firmware/macroduck_firmware.ino" download
+              >download .ino</a
+            >
+          </article>
+        </div>
+      </section>
 
-    <section class="card">
-      <h2>windows app</h2>
-      <p class="muted">
-        Portable, no python install needed. Unzip anywhere and run launch.bat. Ships with the bundled runtime.
-      </p>
-      <a id="downloadBtn" class="btn primary" href="#" target="_blank" rel="noopener">download for windows</a>
-      <p class="muted small" id="downloadNote"></p>
-    </section>
+      <section class="card">
+        <h2>windows app</h2>
+        <p class="muted">
+          Portable, no python install needed. Unzip anywhere and run launch.bat.
+          Ships with the bundled runtime.
+        </p>
+        <a
+          id="downloadBtn"
+          class="btn primary"
+          href="#"
+          target="_blank"
+          rel="noopener"
+          >download for windows</a
+        >
+        <p class="muted small" id="downloadNote"></p>
+      </section>
 
-    <section class="card">
-      <h2>quick start</h2>
-      <ol>
-        <li>flash firmware to your board, or use test mode in the app with no hardware</li>
-        <li>unzip the windows app and run launch.bat</li>
-        <li>keep test mode off for real use, pick your board's com port, connect</li>
-        <li>select an app in the list, record gestures, done</li>
-      </ol>
-      <p class="muted small">
-        browser flashing needs chrome or edge. run with a console for debugging: src\runtime\python\python.exe src\main.py
-      </p>
-    </section>
+      <section class="card">
+        <h2>quick start</h2>
+        <ol>
+          <li>
+            flash firmware to your board, or use test mode in the app with no
+            hardware
+          </li>
+          <li>unzip the windows app and run launch.bat</li>
+          <li>
+            keep test mode off for real use, pick your board's com port, connect
+          </li>
+          <li>select an app in the list, record gestures, done</li>
+        </ol>
+        <p class="muted small">
+          browser flashing needs chrome or edge. run with a console for
+          debugging: src\runtime\python\python.exe src\main.py
+        </p>
+      </section>
 
-    <section class="card">
-      <h2>troubleshooting</h2>
-      <table class="tt">
-        <tr><td>port won't open</td><td>close arduino ide or serial monitor first; they hold the com port</td></tr>
-        <tr><td>no data from port</td><td>wrong port selected, or firmware not flashed; unplug other boards</td></tr>
-        <tr><td>button does nothing</td><td>wrong pin for the board, or the button isn't wired to gnd</td></tr>
-        <tr><td>flash blocked</td><td>chrome/edge only; firefox and safari don't support web serial</td></tr>
-      </table>
-    </section>
-  </main>
+      <section class="card">
+        <h2>troubleshooting</h2>
+        <table class="tt">
+          <tr>
+            <td>port won't open</td>
+            <td>
+              close arduino ide or serial monitor first; they hold the com port
+            </td>
+          </tr>
+          <tr>
+            <td>no data from port</td>
+            <td>
+              wrong port selected, or firmware not flashed; unplug other boards
+            </td>
+          </tr>
+          <tr>
+            <td>button does nothing</td>
+            <td>wrong pin for the board, or the button isn't wired to gnd</td>
+          </tr>
+          <tr>
+            <td>flash blocked</td>
+            <td>
+              chrome/edge only; firefox and safari don't support web serial
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
 
-  <footer>
-    <p>macroduck</p>
-  </footer>
+    <footer>
+      <p>macroduck</p>
+    </footer>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>

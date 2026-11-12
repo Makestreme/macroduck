@@ -1,4 +1,4 @@
-const DOWNLOAD_URL = "https://github.com/YOUR_USER/YOUR_REPO/releases/latest/download/macro-duck-windows.zip";
+const DOWNLOAD_URL = "https://github.com/Makestreme/macroduck/releases/latest/download/macro-duck-windows.zip";
 
 const btn = document.getElementById("downloadBtn");
 const note = document.getElementById("downloadNote");
