@@ -8,7 +8,7 @@ if (btn) {
   btn.addEventListener("click", function (e) {
     if (DOWNLOAD_URL.indexOf("YOUR_USER") !== -1) {
       e.preventDefault();
-      alert("Download link not configured yet. Set DOWNLOAD_URL in docs/app.js.");
+      alert("Download link not configured yet. Set DOWNLOAD_URL in app.js.");
     }
   });
 }
